@@ -150,6 +150,8 @@ for y in range(N):
         else:
             px[x, y] = PAL[c]
 img.save(sys.argv[1])
-img.resize((N * 16, N * 16), Image.NEAREST).save(sys.argv[2])
+olcek = int(sys.argv[3]) if len(sys.argv) > 3 else 16
+olcek = max(1, min(64, olcek))
+img.resize((N * olcek, N * olcek), Image.NEAREST).save(sys.argv[2])
 open(sys.argv[1] + '.txt', 'w').write('\n'.join(''.join(r) for r in G))
 print('ok')

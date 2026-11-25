@@ -7,6 +7,6 @@ pip install pillow
 python avatar.py avatar.png avatar-buyuk.png
 ```
 
-İlk dosya 32x32, ikincisi 16 kat büyütülmüş hali.
+İlk dosya 32x32, ikincisi büyütülmüş hali. Büyütme varsayılan olarak 16 kat; üçüncü değerle değiştirebilirsin: `python avatar.py avatar.png avatar-buyuk.png 8`.
 
 © 2026 Deokwave. Tüm hakları saklıdır.
